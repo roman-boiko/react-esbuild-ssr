@@ -6,6 +6,8 @@
   "scripts": {
     "prebuild": "rm -rf ./public/assets",
     "build": "node build.js",
+    "build-server": "node build-server.js",
+    "run-server": "node build/server.js",
     "preserve": "rm -rf ./public/assets",
     "serve": "node serve.js"
   },
@@ -13,12 +15,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^17.0.44",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "esbuild": "^0.14.43",
     "typescript": "^4.7.3"
   },
   "dependencies": {
+    "fastify": "^4.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
